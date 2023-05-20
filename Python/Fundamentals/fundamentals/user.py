@@ -3,7 +3,7 @@
 
 
 class User:
-    def __init__(self, first, last, email, age):
+    def __init__(self, first, last, email, age,):
         self.first_name = first
         self.last_name = last
         self.email = email
@@ -15,10 +15,23 @@ class User:
         print(self.last_name)
         print(self.email)
         print(self.age)
-
+        print(self.gold_card_points)
+    def enroll(self):
+        self.is_rewards_member = True
+        self.gold_card_points = 200
+    
+    def spend_points(self, amount):
+        amount=self.gold_card_points - amount
+        print (amount)
 herculus = User("chedi", "mola", "hirakel@gmail.com", "20")
-herculus.display_info()
-
+ska = User("Mohamed", "Ali", "mouhamed.ali@gmail.com", "50")
+miou = User("Mariem", "So", "mariem.so@gmail.com", "32")
+herculus.enroll()
+herculus.spend_points(50)
+ska.enroll()
+ska.spend_points(80)
+ska.display_info()
+miou.display_info()
 
 # Attributes:
 # On instantiation of a user, the following attributes should be passed in as arguments:
