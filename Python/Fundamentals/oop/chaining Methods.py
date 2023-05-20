@@ -28,7 +28,3 @@ ska.enroll()
 ska.spend_points(80)
 ska.display_info()
 miou.display_info()
-
-# BONUS: Implement the logic for testing if already a member and try to re-enroll the first user.
-
-# BONUS: Implement the logic to prevent over-spending and call the spend_points method with 40 points on the 3rd user.
