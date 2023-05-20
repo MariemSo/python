@@ -5,14 +5,13 @@ class BankAccount:
 
     def deposit(self, amount):
         self.balance += amount
-        print(self.balance)
         return self
     
     def withdraw(self, amount):
         if amount <= (self.balance):
             self.balance -= amount
         else:
-            self.balance -=5
+            self.balance -=amount-5
             print("Insufficient funds: Charging a $5 fee")
         return self
 
@@ -22,7 +21,6 @@ class BankAccount:
     def yield_interest(self):
         if self.balance > 0:
             self.int_rate = self.balance*self.int_rate
-        print (self.int_rate)
         return self
 int_rate = 0.01
 balance  = 0
