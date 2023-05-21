@@ -24,6 +24,7 @@ class BankAccount:
         if self.balance > 0:
             self.int_rate = self.balance*self.int_rate
         return self
+
 #user Class
 class User:
     def __init__(self, name, email):
@@ -36,10 +37,14 @@ class User:
         print(self.account.balance)
 
     def make_withdrawal(self, amount):
-        self.account.withdraw(self, amount)
+        self.account.withdraw(amount)
         print(self.account.balance)
 
     def display_user_balance(self):
-        self.account.display_account_info(self)
+        self.account.display_account_info()
+
 
 herculus = User("chedi mola", "hirakel@gmail.com")
+herculus.make_deposit(900)
+herculus.make_withdrawal(500)
+herculus.display_user_balance()
