@@ -13,13 +13,13 @@
   </head>
   <body>
     <h1>Welcome!</h1>
-      <div class="box">
-        {% if x %} {% for i in range(0, x) %}
-        <div style="background-color:{{color}};" class="boxes_3"></div>
-        {% endfor %} {% else %} {% for i in range(3) %}
-        <div style="background-color:{{color}};" class="boxes_3"></div>
-        {% endfor %} {% endif %}
-      </div>
+    <div class="box">
+      {% if x %} {% for i in range(0, x) %}
+      <div style="background-color:{{color}};" class="boxes_3"></div>
+      {% endfor %} {% else %} {% for i in range(3) %}
+      <div style="background-color:{{color}};" class="boxes_3"></div>
+      {% endfor %} {% endif %}
+    </div>
   </body>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </html>
