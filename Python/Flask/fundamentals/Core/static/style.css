@@ -1,7 +1,8 @@
-.trolist{
+.box{
     display: flex;
-    gap: 50px;
     justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 h1{
     display: flex;
