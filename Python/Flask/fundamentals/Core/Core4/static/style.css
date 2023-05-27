@@ -1,0 +1,25 @@
+.formContainer{
+    color: white;
+    background-color: #33393e;
+    max-width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 50px;
+}
+.formTitle{
+    color: #fcbf08;
+}
+.infoSubmittion{
+    color: white;
+    background-color: #33393e;
+    max-width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 50px;
+    gap: 10px;
+}
+#goBack{
+    background-color:#2b78e4;
+    color: white;
+    padding: 10px;
+}
